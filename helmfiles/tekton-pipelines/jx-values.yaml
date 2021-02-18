@@ -31,10 +31,12 @@ jxRequirements:
     provider: minikube
   environments:
   - key: dev
+    owner: nishant-jain-94
+    repository: jx3-minikube
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: 192.168.39.196.nip.io
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -tekton-pipelines.
@@ -42,6 +44,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: nishant-jain-94
   repository: bucketrepo
   secretStorage: vault
   vault: {}
